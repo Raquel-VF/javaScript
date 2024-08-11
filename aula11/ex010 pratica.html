@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migração</title>
+</head>
+<body>
+    <h1>Sistema de Migração</h1>
+    país de origem: <input type="text" id="país">
+    <input type="button" value="pesquisar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar(){
+            var país = window.document.querySelector('input#país')
+            var res = window.document.querySelector('div#res')
+
+            var nasci = String((país.value).toLowerCase())
+            
+            res.innerHTML = `<P>Seu país é <strong>${nasci}</strong></P>`
+            if(nasci == 'brasil'){
+                res.innerHTML += '<P>Portanto, você é Brasileiro</P>'
+            }else{
+                res.innerHTML += '<P>Portanto, Você é Estrangeiro</P>'
+            }
+            
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- 
+var país = 'frança'
+console.log(`Vivendo em ${país}`)
+if(país != 'Brasil'){
+    console.log('Você é Estrangeiro!')
+}else {
+    console.log('Você é Brasileiro!')
+}
