@@ -3,7 +3,7 @@
 body{
     background-color: rgba(11, 85, 170, 0.897);
     font: normal 15pt Arial;
-    text-align: center;
+    
 }
 
 header{
@@ -11,7 +11,6 @@ header{
     text-align: center;
 }
 section{
-    display: flex;
     background: white;
     border-radius: 10px;
     padding: 15px;
